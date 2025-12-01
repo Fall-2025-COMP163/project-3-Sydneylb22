@@ -36,7 +36,7 @@ def load_quests(filename="data/quests.txt"):
     Returns: Dictionary of quests {quest_id: quest_data_dict}
     Raises: MissingDataFileError, InvalidDataFormatError, CorruptedDataError
     """
-   if not os.path.exists(filename):
+    if not os.path.exists(filename):
         raise MissingDataFileError(f"Missing file: {filename}")
 
     try:
